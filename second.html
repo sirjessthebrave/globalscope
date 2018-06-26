@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-  <script src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-      <div class="item-title">
-        <h1>Global Tech Stories</h1>
-      </div>
-      <div class="blue back-1"></div>
-      <div class="main">
-        <img src="background.jpg"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Global Tech Stories</title>
+    <meta name="author" content="Jessica Bell">
+    <meta name="description" content="A podcast about tech explored with stories from around the world">
+    <meta name="keywords" content="tech, podcast, storytelling, international, global">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Serif+Pro" rel="stylesheet">
+    <style>
+      .splash-language {
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+        width: 70%;
+      }
+      h1 {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 6em;
+        margin: 0;
+      }
+      h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+        margin: 0;
+      }
+      form {
+        margin-top: 20px;
+      }
+      label {
+        font-family: 'Open Sans', sans-serif;
+      }
+      input {
+        border: solid 1px #ededed;
+        border-radius: 4px;
+        height: 30px;
+        width: 200px;
+        font-family: 'Open Sans', sans-serif;
+      }
+      @media screen and (max-width: 1200px) {
+        
+        h1 {
+          font-size: 3em;
+        }
+        h2 {
+          font-size: 1em;
+        }
+        form {
+        margin-top: 70px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="splash-language">
+      <h1>Global Tech Stories</h1>
+      <h2>A podcast exploring tech through stories from around the world.</h2>
+      <img src="background.jpg"/ width="100%">
+      <form 
+        action="https://tinyletter.com/jess-bell" 
+        method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jess-bell', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
         <p>
-          A podcast exploring tech through stories from around the world.
-          <form 
-            action="https://tinyletter.com/jess-bell" 
-            method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jess-bell', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-            <input type="text" name="email" id="tlemail" />
-            <input type="hidden" value="1" name="embed"/>
-            <input type="submit" style="height: 36px;" value="Subscribe for Updates" />
-          </form>
+          <label for="tlemail">Subscribe up for updates</label>
         </p>
-      </div>
-      <div class="blue back-2"></div>
-      <div class="blue back-3"></div>
-      <div class="blue back-4"></div>
-      <div class="blue back-5"></div>
+        <p>
+          <input type="text" name="email" id="tlemail" />
+        </p>
+        <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
+         
     </div>
-</body>
+  </body>
 </html>
